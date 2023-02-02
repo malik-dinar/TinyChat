@@ -13,3 +13,17 @@ btn.addEventListener("click", ()=>{
     });
     message.value ='';
 })
+
+message.addEventListener('keypress', () => {
+    socket.emit('typing', name.value);
+ })
+
+socket.on('message', (data)=>{
+    answer.innerHTML ='';
+    output.innerHTML += '<p><strong>' + data.name + ': </strong>' + data.message + '</p>';
+})
+
+socket.on('typing', (data) => {
+    answer.innerHTML = '<p><em>' + data + ' is typing a message...</em></p>';
+});
+
