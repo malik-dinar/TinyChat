@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Socket</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+  <div class="text-center mt-5 ">
+    <h1>TinyChat</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+
+      </div>
+
+      <div class="col-md-8 ">
+        <div class="border tc-container">
+          <div id="chat-window">
+            <div id="output"></div>
+            <div id="answer"></div>
+          </div>
+          <!-- <input  type="text" placeholder="Name" /> -->
+          <hr class="w-100" >
+          <div class="d-flex jusify-content-center p-3 tc-chat-box">
+            <div class="form-outline">
+              <input type="text" id="name" class="form-control" />
+              <label class="form-label" for="nam4">Name</label>
+            </div>
+            <div class="form-outline">
+              <input type="text" id="message" class="form-control" />
+              <label class="form-label" for="message">Message</label>
+            </div>
+            <!-- <input id="message" type="text" placeholder="Message" /> -->
+            <div>
+              <button id="send" type="submit" name="action" type="button" class="btn btn-primary ml-3">Send</button>
+            </div>
+          </div>
+          <div id="error" class=" text-danger"> </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="/javascript/chat.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.tc-container{
+    border-radius: 10px;
+    height: 300px;
+    max-height: 400px;
+    position: relative;
+}
+
+.tc-chat-box{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
